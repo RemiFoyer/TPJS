@@ -2,9 +2,17 @@
 <link rel="stylesheet" href="style1.css">
 	<head>
 		<title>Calculatrice</title>
+		<script>
+			function essai(t) {
+				alert(t);
+			}
+			function changecouleur(i){
+				document.getElementById(i).style.color="red";
+			}
+		</script>
 	</head>
 	<body>
-	<p id="titre">
+	<p id="titre" onclick="changecouleur('titre')">
 		Calculatrice
 	</p>
 	<button class="1">1</button>
